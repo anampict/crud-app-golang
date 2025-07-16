@@ -16,7 +16,7 @@ import (
 
 var productCollection *mongo.Collection
 
-func initMongo() {
+func InitMongo() {
 	client, err := mongo.NewClient(options.Client().ApplyURI("mongodb://localhost:27017"))
 	if err != nil {
 		panic(err)
